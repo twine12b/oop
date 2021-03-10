@@ -6,4 +6,5 @@ public class DomesticCat extends CatImpl {
         return "domestic";
     }
 
+
 }
