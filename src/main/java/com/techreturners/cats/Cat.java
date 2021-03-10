@@ -6,7 +6,7 @@ interface Cat {
 
     boolean goToSleep();
 
-    void wakeUp();
+    boolean wakeUp();
 
     String getSetting();
 

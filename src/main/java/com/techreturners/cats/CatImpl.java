@@ -2,7 +2,7 @@ package com.techreturners.cats;
 
 
 public abstract class CatImpl implements Cat {
-    private boolean sleeping;
+    private boolean sleeping = false;
     private int height;
     private String type;
 
@@ -23,8 +23,9 @@ public abstract class CatImpl implements Cat {
     }
 
     @Override
-    public void wakeUp() {
-
+    public boolean wakeUp() {
+        this.sleeping = false;
+        return this.sleeping;
     }
 
     public String getSetting() {
