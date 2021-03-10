@@ -2,14 +2,9 @@ package com.techreturners.cats;
 
 
 public abstract class CatImpl implements Cat {
-    private boolean sleeping = false;
+    private boolean sleeping;
     private int height;
     private String type;
-
-    // constructor
-    public CatImpl() {
-        this.sleeping = true;
-    }
 
     @Override
     public boolean isAsleep() {
